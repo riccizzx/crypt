@@ -32,5 +32,8 @@
     <ClInclude Include="config.hpp">
       <Filter>Arquivos de Cabeçalho\config</Filter>
     </ClInclude>
+    <ClInclude Include="usage.hpp">
+      <Filter>Arquivos de Cabeçalho\config</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

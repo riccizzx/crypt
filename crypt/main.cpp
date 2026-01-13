@@ -1,12 +1,12 @@
 
 #include "config.hpp"
+#include "usage.hpp"
 
 int main() {
 
-	std::cout << "select a challange to run: \n";
-	std::cout << "between 1 and 8\n";
-	char choice;
+	usage();
 
+	char choice;
 	std::cin >> choice;
 
 	switch (choice) {
