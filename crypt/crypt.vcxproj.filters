@@ -27,12 +27,18 @@
     <ClCompile Include="2 - fixed XOR.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.hpp">
       <Filter>Arquivos de Cabeçalho\config</Filter>
     </ClInclude>
     <ClInclude Include="usage.hpp">
+      <Filter>Arquivos de Cabeçalho\config</Filter>
+    </ClInclude>
+    <ClInclude Include="server.hpp">
       <Filter>Arquivos de Cabeçalho\config</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,8 +7,14 @@
 #include <iostream>
 #include <bitset>
 
+
+
+namespace crypt {
+	
+	int hex_to_base64();
+
+	int fixed_xor();
+
+}
+
 #endif		// CRYPT_CONFIG_HPP
-
-int hex_to_base64();
-
-int fixed_xor();
