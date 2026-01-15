@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="1 - hex to base64.cpp" />
     <ClCompile Include="2 - fixed XOR.cpp" />
+    <ClCompile Include="3 - single_byte XOR cipher.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="server.cpp" />
   </ItemGroup>
