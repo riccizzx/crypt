@@ -17,7 +17,7 @@ int binary_hex(char seg) {
 
 }
 
-int hex_to_base64(){
+int crypt::hex_to_base64(){
 
 	printf("\nHex to Base64 Challenge\n");
 

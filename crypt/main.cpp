@@ -2,6 +2,7 @@
 #include "config.hpp"
 #include "usage.hpp"
 
+
 int main() {
 
 	usage();
@@ -12,10 +13,10 @@ int main() {
 	switch (choice) {
 	
 		case '1':
-			hex_to_base64();
+			crypt::hex_to_base64();
 			break;
 		case '2':
-			fixed_xor();
+			crypt::fixed_xor();
 			break;
 
 		default:

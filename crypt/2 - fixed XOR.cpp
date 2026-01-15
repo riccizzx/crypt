@@ -1,7 +1,7 @@
 
 #include "config.hpp"
 
-int fixed_xor() {
+int crypt::fixed_xor() {
 
 	printf("%s","Implementing soon\n");
 
