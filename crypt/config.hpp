@@ -15,6 +15,8 @@ namespace crypt {
 
 	int fixed_xor();
 
+	int xor_cipher();
+
 }
 
 #endif		// CRYPT_CONFIG_HPP

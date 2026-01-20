@@ -2,6 +2,7 @@
 #include "config.hpp"
 #include "server.hpp"
 
+
 net::server::server(int port) {
 
 	if (WSAStartup(MAKEWORD(2, 2), &ws) !=0) {

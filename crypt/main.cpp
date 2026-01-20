@@ -18,6 +18,9 @@ int main() {
 		case '2':
 			crypt::fixed_xor();
 			break;
+		case '3':
+			crypt::xor_cipher();
+			break;
 
 		default:
 			std::cout << "invalid choice\n";
