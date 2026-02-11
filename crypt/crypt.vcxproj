@@ -126,11 +126,15 @@
     <ClCompile Include="1 - hex to base64.cpp" />
     <ClCompile Include="2 - fixed XOR.cpp" />
     <ClCompile Include="3 - single_byte XOR cipher.cpp" />
+    <ClCompile Include="4 - detect single-character XOR.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.hpp" />
     <ClInclude Include="usage.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\Documents\4challange.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

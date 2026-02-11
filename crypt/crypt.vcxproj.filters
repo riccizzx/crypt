@@ -30,6 +30,9 @@
     <ClCompile Include="3 - single_byte XOR cipher.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="4 - detect single-character XOR.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.hpp">
@@ -38,5 +41,10 @@
     <ClInclude Include="usage.hpp">
       <Filter>Arquivos de Cabeçalho\config</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\Documents\4challange.txt">
+      <Filter>Arquivos de Origem</Filter>
+    </Text>
   </ItemGroup>
 </Project>
