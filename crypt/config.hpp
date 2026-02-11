@@ -7,7 +7,7 @@
 #include <iostream>
 #include <bitset>
 #include <vector>
-
+#include <fstream>
 
 namespace crypt {
 	
@@ -17,6 +17,7 @@ namespace crypt {
 
 	int xor_cipher();
 
+	int single_char_xor();
 }
 
 #endif		// CRYPT_CONFIG_HPP

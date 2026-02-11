@@ -3,8 +3,7 @@
 
 void usage() {
 
-	printf("Usage: \n");
-	printf("*** Select a challenge between 1 and 8 ***\n\n");
+	printf("Select a challenge between 1 and 8.\n\n");
 	printf("1: Hex to Base64\n");
 	printf("2: Fixed XOR\n");
 	printf("3: Single-byte XOR cipher\n");
