@@ -15,9 +15,10 @@ namespace crypt {
 
 	int fixed_xor();
 
-	int xor_cipher();
+	int xor_cipher(std::string str);
 
 	int single_char_xor();
+
 }
 
 #endif		// CRYPT_CONFIG_HPP

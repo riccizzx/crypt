@@ -6,9 +6,10 @@ the challange is to decrypt a hex-encoded string that has been XOR'd against a s
 
 */
 
-int crypt::xor_cipher(){
+std::string hex_encode;
 
-	std::string hex_encode = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736";
+int crypt::xor_cipher(std::string hex_encode){
+
 
 	std::string plain_text = "";
 	// formula for single byte XOR cipher is:  cipher_text = plain_text XOR 

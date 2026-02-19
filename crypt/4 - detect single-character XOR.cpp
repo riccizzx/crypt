@@ -1,37 +1,23 @@
 
 #include "config.hpp"
 
-void ler_arquivo(const std::string& nomeArquivo) {
-    
-    std::ifstream arquivo(nomeArquivo);
-    std::string linha;
-
-    if (arquivo.is_open()) {
-        std::cout << "--- Conteudo do Arquivo ---" << std::endl;
-        while (std::getline(arquivo, linha)) {
-            std::cout << linha << std::endl; // Exibe a linha lida
-        }
-
-        arquivo.close(); // Fecha o arquivo
-
-    }
-
-    else {
-
-        std::cerr << "Erro ao abrir o arquivo para leitura!" << std::endl;
-    
-    }
-
-}
-
-
 int crypt::single_char_xor() {
 
-	// open the file and read the contents into a string
+    std::string linha;
+	std::ifstream arquivo("4challange.txt");
 
-	std::string arq = "4-challange.txt";
+    if (arquivo.is_open()) {
 
-	ler_arquivo(arq);
+        while (getline(arquivo, linha)) {
+
+			crypt::xor_cipher(linha);
+
+        }
+        arquivo.close();
+    }
+    else {
+        std::cerr << "Erro ao abrir o arquivo!" << std::endl;
+    }
 
 	return 0;
 
