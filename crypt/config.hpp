@@ -8,6 +8,7 @@
 #include <bitset>
 #include <vector>
 #include <fstream>
+#include <map>
 
 namespace crypt {
 	

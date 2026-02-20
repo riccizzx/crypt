@@ -6,35 +6,55 @@ the challange is to decrypt a hex-encoded string that has been XOR'd against a s
 
 */
 
-std::string hex_encode;
-
 int crypt::xor_cipher(std::string hex_encode){
 
+	int best_score = -999999;
+	std::string best_text;
+	int best_key = 0;
 
-	std::string plain_text = "";
-	// formula for single byte XOR cipher is:  cipher_text = plain_text XOR 
+	for (int k = 0; k <= 255; k++) {
 
-	char key = 'X';	// we can try all possible keys, but we know that the key is a single character, so we can just try all possible characters
+		std::string plain_text;
 
-	for (int i =0; i<hex_encode.length(); i+=2) {
+		for (int i = 0; i < hex_encode.length(); i += 2) {
+
+			// get 2 characters from the hex-encoded string
+			std::string byte = hex_encode.substr(i, 2);
+
+			// convert to integer
+			int int_byte = std::stoi(byte, nullptr, 16);
+
+			// xor the integer with the key
+			unsigned char xor_result = int_byte xor k;
+
+			// convert back to character and append to plain text
+			char plain_char = static_cast<char>(xor_result);
+			plain_text += plain_char;
+
+		}
 		
-		// get 2 characters from the hex-encoded string
-		std::string byte = hex_encode.substr(i, 2);
+		int score = 0;
+
+		for (char c : plain_text) {
+
+			unsigned char uc = static_cast<unsigned char>(c);
+
+			if (std::isalpha(uc)) score += 2;
+			else if (uc == ' ') score += 3;
+			else if (!std::isprint(uc)) score -= 5;
 		
-		// convert to integer
-		int int_byte = std::stoi(byte, nullptr, 16);
+		}
 		
-		// xor the integer with the key
-		int xor_result = int_byte xor key;
-		
-		// convert back to character and append to plain text
-		char plain_char = static_cast<char>(xor_result);
-		plain_text += plain_char;
-		
-		
+		if (score > best_score) {
+			best_score = score;
+			best_text = plain_text;
+			best_key = k;
+		}
+	
 	}
-
-	printf(plain_text.c_str());
+	
+	std::cout << "best key: " << best_key << "\n";
+	std::cout << "best text: " << best_text << "\n";
 
 	return 0;
 
