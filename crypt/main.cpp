@@ -33,6 +33,10 @@ int main() {
 			crypt::single_char_xor();
 			break;
 			
+		case '5':
+			crypt::repeating_keyxor();
+			break;
+
 		default:
 			std::cout << "invalid choice\n";
 	

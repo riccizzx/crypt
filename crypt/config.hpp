@@ -20,6 +20,7 @@ namespace crypt {
 
 	int single_char_xor();
 
+	int repeating_keyxor();
 }
 
 #endif		// CRYPT_CONFIG_HPP
