@@ -37,6 +37,10 @@ int main() {
 			crypt::repeating_keyxor();
 			break;
 
+		case '6':
+			crypt::break_repeating_keyxor();
+			break;
+
 		default:
 			std::cout << "invalid choice\n";
 	
