@@ -129,6 +129,7 @@
     <ClCompile Include="4 - detect single-character XOR.cpp" />
     <ClCompile Include="5 - repeating_keyxor.cpp" />
     <ClCompile Include="6 - break_repeating_xor.cpp" />
+    <ClCompile Include="7 - ecb.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

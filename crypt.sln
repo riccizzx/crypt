@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 	ProjectSection(SolutionItems) = preProject
 		4challange.txt = 4challange.txt
 		..\..\..\Documents\6challange.txt = ..\..\..\Documents\6challange.txt
+		crypt\7challange.txt = crypt\7challange.txt
 	EndProjectSection
 EndProject
 Global
