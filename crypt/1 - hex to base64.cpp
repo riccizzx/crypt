@@ -17,20 +17,19 @@ int binary_hex(char seg) {
 
 }
 
-int crypt::hex_to_base64(){
+std::string crypt::hex_to_base64(std::string input){
 
 	printf("\nHex to Base64 Challenge\n");
 
 	// firts get input and convert to binary
-	std::string str_input = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
 	std::string binary_outp = "";
 	std::string result = "";
 
-	printf("Hex input: %s", str_input.c_str());
+	printf("Hex input: %s", input.c_str());
 
-	for (int i = 0; i < str_input.length(); i++) {
+	for (int i = 0; i < input.length(); i++) {
 
-		binary_outp += char_to_binary(str_input[i]);
+		binary_outp += char_to_binary(input[i]);
 
 	}
 
@@ -59,6 +58,6 @@ int crypt::hex_to_base64(){
 
 	printf("\nBase64 output: %s\n", result.c_str());
 
-	return 0;
+	return result.c_str();
 
 }
