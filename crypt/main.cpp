@@ -17,7 +17,8 @@ int main() {
 	switch (choice) {
 
 		case '1':
-			crypt::hex_to_base64();
+#define str "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d"
+			crypt::hex_to_base64(str);
 			break;
 
 		case '2':
@@ -40,10 +41,13 @@ int main() {
 		case '6':
 			crypt::break_repeating_keyxor();
 			break;
-
+		case '7':
+			crypt::ecb();
+			break;
 		default:
 			std::cout << "invalid choice\n";
-	
+
 	}
 
+	return 0;
 }

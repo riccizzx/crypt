@@ -33,7 +33,7 @@ int distance(const std::string& a, const std::string& b) {
 
 static const std::string B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-std::vector<uint8_t> base64_decode(const std::string& in) {
+std::vector<uint8_t> base64_decoder_diff(const std::string& in) {
     std::vector<uint8_t> out;
     int val = 0, bits = -8;
     for (unsigned char c : in) {
@@ -96,7 +96,7 @@ int crypt::break_repeating_keyxor() {
         std::string line;
         while (std::getline(f, line)) raw_b64 += line;
     }
-    std::vector<uint8_t> cipher = base64_decode(raw_b64);
+    std::vector<uint8_t> cipher = base64_decoder_diff(raw_b64);
     std::cout << "Ciphertext bytes: " << cipher.size() << "\n";
 
     // ── 2. find the best KEYSIZE (2..40) ─────────────────────────────────────

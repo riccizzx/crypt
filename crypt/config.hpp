@@ -12,7 +12,7 @@
 
 namespace crypt {
 	
-	int hex_to_base64();
+	std::string hex_to_base64(std::string input);
 
 	int fixed_xor();
 
@@ -23,6 +23,8 @@ namespace crypt {
 	int repeating_keyxor();
 
 	int break_repeating_keyxor();
+
+	int ecb();
 
 }
 
