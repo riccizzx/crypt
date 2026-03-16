@@ -41,9 +41,15 @@ int main() {
 		case '6':
 			crypt::break_repeating_keyxor();
 			break;
+
 		case '7':
 			crypt::ecb();
 			break;
+
+		case '8':
+			crypt::detect_aes();
+			break;
+
 		default:
 			std::cout << "invalid choice\n";
 

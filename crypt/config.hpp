@@ -25,7 +25,9 @@ namespace crypt {
 	int break_repeating_keyxor();
 
 	int ecb();
+	int resolution(std::string base_64); // for the challange 7/8
 
+	int detect_aes();
 }
 
 #endif		// CRYPT_CONFIG_HPP
