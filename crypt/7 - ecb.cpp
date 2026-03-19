@@ -61,27 +61,7 @@ int crypt::ecb()
 
     // base64 decode
     resolution(base64);
-    /*
-    std::vector<unsigned char> ciphertext = base64_decode(base64);
 
-    unsigned char key[] = "YELLOW SUBMARINE";
-
-    std::vector<unsigned char> plaintext(ciphertext.size());
-
-    AES_KEY aes_key;
-    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
-    EVP_DecryptInit_ex(ctx, EVP_aes_128_ecb(), nullptr, key, nullptr);
-
-    int out_len1 = 0;
-    int out_len2 = 0;
-
-    EVP_DecryptUpdate(ctx, plaintext.data(), &out_len1, ciphertext.data(), (int)ciphertext.size());
-    EVP_DecryptFinal_ex(ctx, plaintext.data() + out_len1, &out_len2);
-
-    EVP_CIPHER_CTX_free(ctx);
-
-    std::cout << std::string(plaintext.begin(), plaintext.end());
-    */
     return 0;
 
 }
